@@ -1,0 +1,10 @@
+services:
+  next:
+    container_name: react-nextjs
+    image: react-nextjs
+    build: .
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./public:/usr/src/app/public
+    ports:
+      - "9001:3000"
